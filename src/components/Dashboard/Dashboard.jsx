@@ -8,6 +8,7 @@ import ProductIco from "../icon/ProductIco";
 import ShiftsIco from "../icon/ShiftsIco";
 import Activity from "./Activity";
 import RecentShifts from "./RecentShifts";
+import ReportedReviewIco from "../icon/ReportedReviewIco";
 const Dashboard = () => {
   return (
     <div className=" ">
@@ -30,7 +31,7 @@ const Dashboard = () => {
           <div>
             <h1 className="font-semibold text-2xl text-textColor italic">
               {" "}
-              Total Bartenders
+              Total Providers
             </h1>
             <div className="flex pt-5 justify-between items-center ">
               <h1 className="text-primary text-3xl font-bold italic">17</h1>
@@ -44,12 +45,12 @@ const Dashboard = () => {
           <div>
             <h1 className="font-semibold text-2xl text-textColor italic">
               {" "}
-              Total Venue Owners
+              Pending Reporter
             </h1>
             <div className="flex pt-5 justify-between items-center ">
               <h1 className="text-primary text-3xl font-bold italic">17</h1>
               <div className="bg-primary-light w-[40px] h-[40px] flex justify-center items-center rounded-lg">
-                <ShiftsIco color={"#2B7FFF"} />
+                <ReportedReviewIco color={"#2B7FFF"} />
               </div>
             </div>
           </div>
