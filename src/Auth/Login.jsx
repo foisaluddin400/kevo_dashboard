@@ -20,11 +20,11 @@ const Login = () => {
   };
 
   return (
-    <div className="flex font-nunito justify-center items-center min-h-screen px-4 lg:px-0 bg-[#0F0B1A]">
-      <div className="w-full max-w-lg lg:p-8 p-4 border border-[#2A2448] rounded-lg bg-[#822CE71A]">
+    <div className="flex font-nunito justify-center items-center min-h-screen px-4 lg:px-0 bg-white">
+      <div className="w-full max-w-lg lg:p-8 p-4 border border-borderColor rounded-lg bg-white">
         {/* Title */}
-        <h2 className="text-2xl font-semibold text-white mb-2 italic">Welcome Back</h2>
-        <p className="text-gray-400 mb-6 text-sm">
+        <h2 className="text-2xl font-semibold text-black mb-2 italic">Welcome Back</h2>
+        <p className="text-black mb-6 text-sm">
           Sign in to continue exploring and managing your Venue.
         </p>
 
@@ -32,21 +32,21 @@ const Login = () => {
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Email */}
           <div>
-            <label className="text-gray-400 block mb-1">Enter Email Address</label>
+            <label className="text-textColor block mb-1">Enter Email Address</label>
             <input
               type="email"
               name="email"
               value={formValues.email}
               onChange={handleChange}
               placeholder="Enter Email Address"
-              className="w-full px-3 py-2 bg-[#1D1733] border border-[#2A2448] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#822CE7] placeholder-white/70"
+              className="w-full px-3 py-2 bg-white border border-borderColor text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2B7FFF] "
               required
             />
           </div>
 
           {/* Password */}
           <div>
-            <label className="text-gray-400 block mb-1">Password</label>
+            <label className="text-textColor block mb-1">Password</label>
             <div className="relative">
               <input
                 type={showPassword ? "text" : "password"}
@@ -54,7 +54,7 @@ const Login = () => {
                 value={formValues.password}
                 onChange={handleChange}
                 placeholder="••••••••"
-                className="w-full px-3 py-2 bg-[#1D1733] border border-[#2A2448] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#822CE7] placeholder-white/70"
+                className="w-full px-3 py-2 bg-white border border-borderColor text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2B7FFF] "
                 required
               />
               <button
@@ -75,13 +75,13 @@ const Login = () => {
                 name="remember"
                 checked={formValues.remember}
                 onChange={handleChange}
-                className="accent-[#822CE7]"
+                className="accent-[#2B7FFF]"
               />
               Remember me
             </label>
             <Link
               to={"/forgot-password"}
-              className="text-sm text-[#9D5BFF] hover:underline focus:outline-none"
+              className="text-sm text-[#2B7FFF] hover:underline focus:outline-none"
             >
               Forget password?
             </Link>
@@ -90,12 +90,12 @@ const Login = () => {
           {/* Login Button */}
           <button
             type="submit"
-            className="w-full bg-gradient-to-tr from-[#822CE7] to-[#BB82FF] text-white shadow-md px-3 py-2 rounded-full"
+            className="w-full bg-gradient-to-tr from-[#2B7FFF] to-[#69A5FF] text-white shadow-md px-3 py-2 rounded-full"
           >
             Login
           </button>
         </form>
-        <span className="flex justify-center pt-2 text-white">No account yet?  <Link to={'/joinAs'}><span className="text-[#822CE7]"> Create an account</span></Link></span>
+
       </div>
     </div>
   );

@@ -15,8 +15,8 @@ const ResetPass = () => {
   };
 
   return (
-   <div className="flex font-nunito justify-center items-center min-h-screen px-4 lg:px-0">
-      <div className="w-full max-w-lg  lg:p-8 p-4 border">
+ <div className="flex font-nunito justify-center items-center min-h-screen px-4 lg:px-0 bg-white">
+      <div className="w-full max-w-lg lg:p-8 p-4 border border-borderColor rounded-lg bg-white">
         {/* Title */}
         <h2 className="text-2xl font-semibold text-gray-900 mb-2">
           Set a New Password
@@ -94,7 +94,7 @@ const ResetPass = () => {
            <button
               
               htmlType="submit"
-              className="w-full bg-red-500 py-3 text-white rounded-md hover:bg-primary-dark transition-colors"
+              className="w-full bg-gradient-to-tr from-[#2B7FFF] to-[#69A5FF] text-white shadow-md px-3 py-2 rounded-full"
             >
               Continue
             </button></Link>
